@@ -1,0 +1,302 @@
+[
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "BuscarEstadoPorId",
+    "RelativePath": "api/Estado/BuscarEstadoPorId/{idEstado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "BuscarEstadoPorIdPontoTuristico",
+    "RelativePath": "api/Estado/BuscarEstadoPorIdPontoTuristico/{idPontoTuristico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPontoTuristico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "CriarEstado",
+    "RelativePath": "api/Estado/CriarEstado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoCriacaoDto",
+        "Type": "WebApi8_CadastroTuristico.Dto.Estado.EstadoCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "EditarEstado",
+    "RelativePath": "api/Estado/EditarEstado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoEdicaoDto",
+        "Type": "WebApi8_CadastroTuristico.Dto.Estado.EstadoEdicaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "ExcluirEstado",
+    "RelativePath": "api/Estado/ExcluirEstado",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstado",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.EstadoController",
+    "Method": "ListarEstados",
+    "RelativePath": "api/Estado/ListarEstados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.EstadoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "BuscarPontoTuristicoId",
+    "RelativePath": "api/PontoTuristico/BuscarPontoTuristicoId/{idPontoTuristico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPontoTuristico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "BuscarPontoTuristicoPorIdEstado",
+    "RelativePath": "api/PontoTuristico/BuscarPontoTuristicoPorIdEstado/{idEstado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "CriarPontoTuristico",
+    "RelativePath": "api/PontoTuristico/CriarPontoTuristico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pontoTuristicoCriacaoDto",
+        "Type": "WebApi8_CadastroTuristico.Dto.PontoTuristico.PontoTuristicoCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "EditarPontoTuristico",
+    "RelativePath": "api/PontoTuristico/EditarPontoTuristico",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pontoTuristicoEdicaoDto",
+        "Type": "WebApi8_CadastroTuristico.Dto.PontoTuristico.PontoTuristicoEdicaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "ExcluirPontoTuristico",
+    "RelativePath": "api/PontoTuristico/ExcluirPontoTuristico",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPontoTuristico",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "ListarPontoTuristico",
+    "RelativePath": "api/PontoTuristico/ListarPontoTuristico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

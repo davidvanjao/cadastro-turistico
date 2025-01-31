@@ -1,0 +1,8 @@
+@WebApi8_CadastroTuristico_HostAddress = http://localhost:5194
+
+//utilizado para solicitações dentro do proprio visual estudio 
+
+GET {{WebApi8_CadastroTuristico_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

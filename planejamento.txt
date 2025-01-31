@@ -1,0 +1,36 @@
+1° Definir Stack de tecnologia:
+ - backenc/API: C# com ASP.NET Core Web API;
+ - banco de dados: SQL Server
+ - frontend: React (definir axios ou fetch para chamadas à API).*************
+
+2: Estrutura Local e GIT.
+- /cadastro-turistico
+	/backend
+	/frontend
+
+3° Definicao do banco.
+
+CREATE TABLE Estados (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100) NOT NULL,
+    Sigla VARCHAR(2) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE PontosTuristicos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100) NOT NULL,
+    Descricao VARCHAR(100) NOT NULL,
+    Localizacao VARCHAR(255) NOT NULL,
+    Cidade VARCHAR(100) NOT NULL,
+    EstadoId INT NOT NULL,
+    DataInclusao DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (EstadoId) REFERENCES Estados(Id)
+);
+
+
+
+
+4: Desenvolvimento backend.
+
+5: Subir api para github
