@@ -45,6 +45,35 @@ namespace WebApi8_CadastroTuristico.Services.PontoTuristico {
             }
         }
 
+        public async Task<ResponseModel<List<PontoTuristicoModel>>> BuscarPontoTuristicoFiltroAvancado(string termoBusca) {
+            ResponseModel<List<PontoTuristicoModel>> resposta = new ResponseModel<List<PontoTuristicoModel>>();
+
+            try {
+                // Faz a busca ignorando maiúsculas e minúsculas
+                var pontosTuristicos = await _context.PontosTuristicos
+                    .Include(e => e.Estado) // Insere a tabela estados
+                    .Where(p => EF.Functions.Like(p.Nome, $"%{termoBusca}%") ||
+                                EF.Functions.Like(p.Descricao, $"%{termoBusca}%") ||
+                                EF.Functions.Like(p.Localizacao, $"%{termoBusca}%"))
+                    .ToListAsync();
+
+                if (pontosTuristicos == null || !pontosTuristicos.Any()) {
+                    resposta.Mensagem = "Nenhum registro localizado.";
+                    resposta.Dados = new List<PontoTuristicoModel>();
+                    return resposta;
+                }
+
+                resposta.Dados = pontosTuristicos;
+                resposta.Mensagem = "Pontos turísticos localizados!";
+                return resposta;
+            }
+            catch (Exception ex) {
+                resposta.Mensagem = "Erro ao buscar por pontos turísticos.";
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+        
         public async Task<ResponseModel<List<PontoTuristicoModel>>> BuscarPontoTuristicoPorIdEstado(int idEstado) {
             ResponseModel<List<PontoTuristicoModel>> resposta = new ResponseModel<List<PontoTuristicoModel>>();
 
@@ -219,7 +248,10 @@ namespace WebApi8_CadastroTuristico.Services.PontoTuristico {
             //se acontecer algum erro, cai dentro do catch
             try {
 
-                var pontoTuristico = await _context.PontosTuristicos.Include(a => a.Estado).ToListAsync();               
+                var pontoTuristico = await _context.PontosTuristicos
+                    .Include(a => a.Estado)
+                    .OrderByDescending(pto => pto.DataInclusao)
+                    .ToListAsync();               
 
                 resposta.Dados = pontoTuristico;
                 resposta.Mensagem = "Todos os estados foram carregados!";

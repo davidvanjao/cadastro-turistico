@@ -318,6 +318,44 @@
         }
       }
     },
+    "/api/PontoTuristico/BuscarPontoTuristicoFiltroAvancado": {
+      "get": {
+        "tags": [
+          "PontoTuristico"
+        ],
+        "parameters": [
+          {
+            "name": "termo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PontoTuristicoModelListResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PontoTuristicoModelListResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PontoTuristicoModelListResponseModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/PontoTuristico/BuscarPontoTuristicoPorIdEstado/{idEstado}": {
       "get": {
         "tags": [

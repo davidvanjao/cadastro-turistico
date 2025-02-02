@@ -151,6 +151,32 @@
   },
   {
     "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
+    "Method": "BuscarPontoTuristicoFiltroAvancado",
+    "RelativePath": "api/PontoTuristico/BuscarPontoTuristicoFiltroAvancado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "termo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApi8_CadastroTuristico.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[WebApi8_CadastroTuristico.Models.PontoTuristicoModel, WebApi8-CadastroTuristico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApi8_CadastroTuristico.Controllers.PontoTuristicoController",
     "Method": "BuscarPontoTuristicoId",
     "RelativePath": "api/PontoTuristico/BuscarPontoTuristicoId/{idPontoTuristico}",
     "HttpMethod": "GET",

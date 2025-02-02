@@ -200,7 +200,6 @@ namespace WebApi8_CadastroTuristico.Services.Estado {
 
         }
 
-        //metodo asyncrono. Serve para esperar a resposta
         public async Task<ResponseModel<List<EstadoModel>>> ListarEstados() {
 
             //objeto de resposta
@@ -211,14 +210,14 @@ namespace WebApi8_CadastroTuristico.Services.Estado {
 
                 //entrei no banco, entrei na tabela estados, transformei em lista todos os estados.
                 //metodo await espera a resposta antes de prosseguir.
-                var estados = await _context.Estados.ToListAsync();
+                var estados = await _context.Estados
+                    .OrderBy(estado => estado.Nome)  // Ordena pelo nome
+                    .ToListAsync();
 
                 resposta.Dados = estados;
                 resposta.Mensagem = "Todos os estados foram carregados!";
 
                 return resposta;
-
-
 
             }
             catch (Exception ex) { 

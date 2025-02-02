@@ -1,5 +1,3 @@
-//arquivo que inicia o projeto
-
 using Microsoft.EntityFrameworkCore;
 using WebApi8_CadastroTuristico.Data;
 using WebApi8_CadastroTuristico.Services.Estado;
@@ -7,32 +5,45 @@ using WebApi8_CadastroTuristico.Services.PontoTuristico;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configuração do CORS
+builder.Services.AddCors(options => {
+    options.AddPolicy("PermitirFrontend",
+        policy => {
+            policy.AllowAnyOrigin() // Permite qualquer origem
+                //.WithOrigins("http://localhost:5173")  // Permite uma origem específica
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                //.AllowCredentials() // NÃO pode ser usado junto com AllowAnyOrigin()
+                  ;
+        });
+});
 
+// Adiciona serviços ao container
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//informa que os metodos de interface estao implementados dentro de servicos
+// Serviços da aplicação
 builder.Services.AddScoped<IEstadoInterface, EstadoService>();
-builder.Services.AddScoped<IPontoTuristicoInterface, PontoTuristicoService>(); //lembrar de ligar service:interface
+builder.Services.AddScoped<IPontoTuristicoInterface, PontoTuristicoService>();
 
-//conexao com o banco. Entra no epsettings e pega as configuracoes do banco.
+// Conexão com o banco de dados
 builder.Services.AddDbContext<AppDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// Configuração do pipeline HTTP
+if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+
+// Ativar o CORS antes dos controllers
+app.UseCors("PermitirFrontend");
 
 app.UseAuthorization();
 

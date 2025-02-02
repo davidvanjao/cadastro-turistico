@@ -1,0 +1,94 @@
+/* Reset de margens, paddings e box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+}
+
+/* Fonte base e suavização */
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove estilos padrões de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define um estilo padrão para botões */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Remove o outline padrão ao focar */
+button, input, textarea {
+  outline: none;
+}
+
+/* Define largura total para imagens */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: #6200ea; /* Cor de fundo */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar ul {
+  list-style: none; /* Remove os marcadores de lista */
+  display: flex; /* Alinha os itens horizontalmente */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  gap: 1.5rem; /* Espaçamento entre os itens */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
+.navbar ul li {
+  margin: 0; /* Remove margens padrão */
+}
+
+.navbar ul li a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo ao passar o mouse */
+  color: #bb86fc; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o link ativo (opcional) */
+.navbar ul li a.active {
+  background-color: #3700b3; /* Cor de fundo para o link ativo */
+  color: white; /* Cor do texto para o link ativo */
+}

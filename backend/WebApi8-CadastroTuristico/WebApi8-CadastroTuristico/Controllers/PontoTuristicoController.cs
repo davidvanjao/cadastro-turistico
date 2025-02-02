@@ -32,6 +32,12 @@ namespace WebApi8_CadastroTuristico.Controllers {
 
         }
 
+        [HttpGet("BuscarPontoTuristicoFiltroAvancado")]
+        public async Task<ActionResult<ResponseModel<List<PontoTuristicoModel>>>> BuscarPontoTuristicoFiltroAvancado([FromQuery] string termo) {
+            var pontosTuristicos = await _pontoTuristicoInterface.BuscarPontoTuristicoFiltroAvancado(termo);
+            return Ok(pontosTuristicos);
+        }
+
 
         [HttpGet("BuscarPontoTuristicoPorIdEstado/{idEstado}")]
         public async Task<ActionResult<ResponseModel<PontoTuristicoModel>>> BuscarPontoTuristicoPorIdEstado(int idEstado) {

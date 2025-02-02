@@ -27,7 +27,6 @@ C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApi8-CadastroTuristico.props
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApi8-CadastroTuristico.props
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\WebApi8-.25A1A5FC.Up2Date
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\WebApi8-CadastroTuristico.dll
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\refint\WebApi8-CadastroTuristico.dll
@@ -138,3 +137,5 @@ C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\WebApi8-CadastroTuristico.sourcelink.json
+C:\Projetos\cadastroSinqia\cadastro-turistico\backend\WebApi8-CadastroTuristico\WebApi8-CadastroTuristico\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
