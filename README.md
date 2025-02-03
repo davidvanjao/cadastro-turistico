@@ -56,7 +56,7 @@ Se a versão for exibida corretamente, a ferramenta está pronta para uso.
    npm run dev
    ```
 
-A aplicação React estará disponível em `http://localhost:5173`.
+A aplicação React estará disponível em `http://localhost:5173`.(O NUMERO DA PORTA APARECE NO PROMPT APOS RODAR O COMANDO NPM RUN DEV)
 
 > **Aviso:** Certifique-se de que a API backend está rodando na porta `7108`. Se não estiver, você precisará alterar a configuração no frontend para apontar para a porta correta. Para isso, abra o arquivo localizado em `./cadastro-ponto-turistico/src/services/api.js` e modifique o valor para a nova porta desejada.
 
@@ -77,16 +77,15 @@ Exemplo:
 
 2. Configure a string de conexão no arquivo `appsettings.json`. Substitua `sua_conexao_aqui` com a string de conexão adequada ao seu ambiente: Não esqueca de mudar o campo server com o nome do computador.
 
-   ```sh   
-     "ConnectionStrings": {
-       "DefaultConnection": "sua_conexao_aqui"
-     }   
+```javascript  
+   "ConnectionStrings": {
+      "DefaultConnection": "sua_conexao_aqui"
+   }   
 
-   Exemplo de string de conexão para SQL Server local:
+Exemplo de string de conexão para SQL Server local:
+"server= NOME_DO_COMPUTADOR; database= SistemaPontoTuristico; trusted_connection= true; trustservercertificate=true"
 
-   ```sh
-   "server= nome_seu_computador; database= SistemaPontoTuristico; trusted_connection= true; trustservercertificate=true"
-   ```
+```
 
 3. Restaure os pacotes:
    ```sh
@@ -115,8 +114,8 @@ Exemplo:
 
 ### Testando o projeto
 
-1. Abra o navegador e acesse `http://localhost:5173` para visualizar a aplicação.
-2. Certifique-se de que o backend está funcionando corretamente em `http://localhost:7108/api`.
+1. Abra o navegador e acesse `http://localhost:PORTA` para visualizar a aplicação. (VERIFICAR A PORTA DO REACT)
+2. Certifique-se de que o backend está funcionando corretamente em `http://localhost:PORTA/api/PontoTuristico/ListarPontoTuristico`. (VERIFICAR A PORTA DA API)
 
 ### Estrutura do Projeto
 
@@ -152,13 +151,13 @@ Exemplo:
 
 ## Endpoints da API
 
-- `https://localhost:7108/api/Estado/ListarEstados` - Lista os estados cadastrados.
-- `https://localhost:7108/api/PontoTuristico/ListarPontoTuristico` - Lista os pontos turísticos.
-- `https://localhost:7108/api/PontoTuristico/BuscarPontoTuristicoId/{idPontoTuristico}` - Busca um ponto turístico por ID.
-- `https://localhost:7108/api/PontoTuristico/BuscarPontoTuristicoFiltroAvancado/{termo}` - Busca por nome, descrição ou localização.
-- `https://localhost:7108/api/PontoTuristico/CriarPontoTuristico` - Cadastra um novo ponto turístico.
-- `https://localhost:7108/api/PontoTuristico/EditarPontoTuristico/{idPontoTuristico}` - Edita um ponto turístico.
-- `https://localhost:7108/api/PontoTuristico/ExcluirPontoTuristico/{idPontoTuristico}` - Exclui um ponto turístico.
+- `http://localhost:7108/api/Estado/ListarEstados` - Lista os estados cadastrados.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/ListarPontoTuristico` - Lista os pontos turísticos.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/BuscarPontoTuristicoId/{idPontoTuristico}` - Busca um ponto turístico por ID.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/BuscarPontoTuristicoFiltroAvancado/{termo}` - Busca por nome, descrição ou localização.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/CriarPontoTuristico` - Cadastra um novo ponto turístico.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/EditarPontoTuristico/{idPontoTuristico}` - Edita um ponto turístico.(VERIFICAR A PORTA DA API)
+- `http://localhost:7108/api/PontoTuristico/ExcluirPontoTuristico/{idPontoTuristico}` - Exclui um ponto turístico.(VERIFICAR A PORTA DA API)
 
 ## Segurança
 

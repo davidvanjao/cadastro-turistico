@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApi8-CadastroTuristico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d4f4dc941a6c612996a0c8bac100aadfe45792b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2a22c4deb30e5b29217180f87c1cae7a6505e8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApi8-CadastroTuristico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApi8-CadastroTuristico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
