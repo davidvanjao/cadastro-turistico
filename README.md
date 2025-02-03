@@ -18,26 +18,29 @@ Clone o projeto:
     - git clone https://github.com/davidvanjao/cadastro-turistico.git
 
 /Frontend
-    - Instale as dependências: npm install
-    - Inicie o servidor de desenvolvimento: npm run dev
+    /cadastro-ponto-turistico
+        - Instale as dependências: npm install
+        - Inicie o servidor de desenvolvimento: npm run dev
 
 /Backend
     /WebApi8-CadastroTuristico **os comandos devem ser rodados dentro da pasta onde contenha o arquivo .csproj**
-        - Restaure os pacotes: dotnet restore
-        - verifique versoes dos pacotes: dotnet list package
-            **Verificar se os pacotes e versaoes estao na 8.0.3**
-            - Microsoft.EntityFrameworkCore                8.0.3        8.0.3    
-            - Microsoft.EntityFrameworkCore.Design         8.0.3        8.0.3    
-            - Microsoft.EntityFrameworkCore.SqlServer      8.0.3        8.0.3    
-            - Microsoft.EntityFrameworkCore.Tools          8.0.3        8.0.3  
-        - verifica se dotnet -f esta instalado: dotnet tool list -g
-        - recriar banco de dados: dotnet ef database update
+        /WebApi8-CadastroTuristico
+            /WebApi8-CadastroTuristico
+                - Restaure os pacotes: dotnet restore
+                - verifique versoes dos pacotes: dotnet list package
+                    **Verificar se os pacotes e versaoes estao na 8.0.3**
+                    - Microsoft.EntityFrameworkCore                8.0.3        8.0.3    
+                    - Microsoft.EntityFrameworkCore.Design         8.0.3        8.0.3    
+                    - Microsoft.EntityFrameworkCore.SqlServer      8.0.3        8.0.3    
+                    - Microsoft.EntityFrameworkCore.Tools          8.0.3        8.0.3  
+                - verifica se dotnet -f esta instalado: dotnet tool list -g
+                - recriar banco de dados: dotnet ef database update
 
     
 
 ===========================IMPORTANTE========================================
 
-**Insira no banco os inserts abaixo.**
+**Insira no banco SQL SERVER os inserts abaixo.**
 
 - Banco de Dados
     - Adicione os estados do Brasil na tabela Estados:
@@ -104,6 +107,11 @@ Clone o projeto:
             ('Praça do Relógio', 'Praça com um grande relógio como ponto central.', 'Rua do Tempo, 1414', 'Tupã', 1, '2025-02-01'),
             ('Cine Teatro', 'Local para exibição de filmes e peças teatrais.', 'Rua do Cinema, 1515', 'Tupã', 1, '2025-02-01');
         GO
+
+
+### Randando API
+
+Inicie a Api com Visual Studio 2022
 
 ###  Estrutura do Projeto
 
