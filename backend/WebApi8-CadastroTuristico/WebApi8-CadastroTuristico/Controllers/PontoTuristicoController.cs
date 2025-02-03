@@ -39,6 +39,8 @@ namespace WebApi8_CadastroTuristico.Controllers {
         }
 
 
+
+
         [HttpGet("BuscarPontoTuristicoPorIdEstado/{idEstado}")]
         public async Task<ActionResult<ResponseModel<PontoTuristicoModel>>> BuscarPontoTuristicoPorIdEstado(int idEstado) {
             var pontoTuristico = await _pontoTuristicoInterface.BuscarPontoTuristicoPorIdEstado(idEstado);

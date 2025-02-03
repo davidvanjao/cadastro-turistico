@@ -49,15 +49,21 @@ namespace WebApi8_CadastroTuristico.Services.PontoTuristico {
             ResponseModel<List<PontoTuristicoModel>> resposta = new ResponseModel<List<PontoTuristicoModel>>();
 
             try {
-                // Faz a busca ignorando maiúsculas e minúsculas
-                var pontosTuristicos = await _context.PontosTuristicos
+                // Verifica se o termo de busca está vazio ou nulo
+                var query = _context.PontosTuristicos
                     .Include(e => e.Estado) // Insere a tabela estados
-                    .Where(p => EF.Functions.Like(p.Nome, $"%{termoBusca}%") ||
-                                EF.Functions.Like(p.Descricao, $"%{termoBusca}%") ||
-                                EF.Functions.Like(p.Localizacao, $"%{termoBusca}%"))
-                    .ToListAsync();
+                    .AsQueryable();
 
-                if (pontosTuristicos == null || !pontosTuristicos.Any()) {
+                if (!string.IsNullOrWhiteSpace(termoBusca)) {
+                    query = query.Where(p =>
+                        EF.Functions.Like(p.Nome, $"%{termoBusca}%") ||
+                        EF.Functions.Like(p.Descricao, $"%{termoBusca}%") ||
+                        EF.Functions.Like(p.Localizacao, $"%{termoBusca}%"));
+                }
+
+                var pontosTuristicos = await query.ToListAsync();
+
+                if (!pontosTuristicos.Any()) {
                     resposta.Mensagem = "Nenhum registro localizado.";
                     resposta.Dados = new List<PontoTuristicoModel>();
                     return resposta;
@@ -73,7 +79,7 @@ namespace WebApi8_CadastroTuristico.Services.PontoTuristico {
                 return resposta;
             }
         }
-        
+
         public async Task<ResponseModel<List<PontoTuristicoModel>>> BuscarPontoTuristicoPorIdEstado(int idEstado) {
             ResponseModel<List<PontoTuristicoModel>> resposta = new ResponseModel<List<PontoTuristicoModel>>();
 

@@ -32,8 +32,15 @@ const Home = () => {
 
   const handleBuscar = async (termo) => {
     try {
+
+      //Se o termo estiver vazio, recarrega a página
+      if (!termo || termo.trim() === "") {
+        window.location.reload();
+        return;
+      }
+
       const response = await Api.get(`/PontoTuristico/BuscarPontoTuristicoFiltroAvancado`, {
-        params: { termo }
+        params: { termo} // Se termo for vazio ou undefined, envia uma string vazia
       });
   
       // Verifica se a resposta contém dados
