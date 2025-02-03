@@ -14,28 +14,30 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### Instalação
 
-- Frontend
-    - Clone o repositório do frontend:
+Clone o projeto: 
+    - git clone https://github.com/davidvanjao/cadastro-turistico.git
+
+/Frontend
     - Instale as dependências: npm install
     - Inicie o servidor de desenvolvimento: npm run dev
 
-- Backend
-    - Clone o repositório do frontend:
-    - Restaure os pacotes: dotnet restore
-    - inicie a API: npm run dev
+/Backend
+    /WebApi8-CadastroTuristico **os comandos devem ser rodados dentro da pasta onde contenha o arquivo .csproj**
+        - Restaure os pacotes: dotnet restore
+        - verifique versoes dos pacotes: dotnet list package
+            **Verificar se os pacotes e versaoes estao na 8.0.3**
+            - Microsoft.EntityFrameworkCore                8.0.3        8.0.3    
+            - Microsoft.EntityFrameworkCore.Design         8.0.3        8.0.3    
+            - Microsoft.EntityFrameworkCore.SqlServer      8.0.3        8.0.3    
+            - Microsoft.EntityFrameworkCore.Tools          8.0.3        8.0.3  
+        - verifica se dotnet -f esta instalado: dotnet tool list -g
+        - recriar banco de dados: dotnet ef database update
+
+    
 
 ===========================IMPORTANTE========================================
 
-No arquivo "appsettings.json", altere o nome do SERVER para o nome do seu banco local:
-
-    "DefaultConnection": "server= NOMEdoSERVIDOR; database= SistemaPontoTuristico; trusted_connection= true; trustservercertificate=true"
-
-No Visual Studi 2022, acesse o menu FERRAMENTAS->GERENCIADOR DE PACOTES NUGET->CONSOLE DO GERENCIADOR
-No promp comando aberto, digite o comando: add--migration NOMEparaMIGRACAO, logo depois update-database
-Insira no banco os inserts abaixo.
-
-===========================IMPORTANTE========================================
-
+**Insira no banco os inserts abaixo.**
 
 - Banco de Dados
     - Adicione os estados do Brasil na tabela Estados:
@@ -43,6 +45,7 @@ Insira no banco os inserts abaixo.
     GO
     INSERT INTO [dbo].[Estados] ([Nome], [Sigla])
     VALUES
+        ('São Paulo', 'SP'),
         ('Acre', 'AC'),
         ('Alagoas', 'AL'),
         ('Amapá', 'AP'),
@@ -67,7 +70,6 @@ Insira no banco os inserts abaixo.
         ('Rondônia', 'RO'),
         ('Roraima', 'RR'),
         ('Santa Catarina', 'SC'),
-        ('São Paulo', 'SP'),
         ('Sergipe', 'SE'),
         ('Tocantins', 'TO');
     GO

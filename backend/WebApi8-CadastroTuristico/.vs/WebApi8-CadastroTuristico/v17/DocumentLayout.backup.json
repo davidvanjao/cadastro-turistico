@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|c:\\projetos\\cadastrosinqia\\cadastro-turistico\\backend\\webapi8-cadastroturistico\\webapi8-cadastroturistico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|solutionrelative:webapi8-cadastroturistico\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|c:\\projetos\\cadastrosinqia\\cadastro-turistico\\backend\\webapi8-cadastroturistico\\webapi8-cadastroturistico\\services\\estado\\iestadointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|solutionrelative:webapi8-cadastroturistico\\services\\estado\\iestadointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|c:\\projetos\\cadastrosinqia\\cadastro-turistico\\backend\\webapi8-cadastroturistico\\webapi8-cadastroturistico\\services\\pontoturistico\\pontoturisticoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74B3FE10-2380-4774-86F8-52A1530D1AB0}|WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico.csproj|solutionrelative:webapi8-cadastroturistico\\services\\pontoturistico\\pontoturisticoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,11 +22,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEstadoInterface.cs",
+              "DocumentMoniker": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico\\Services\\Estado\\IEstadoInterface.cs",
+              "RelativeDocumentMoniker": "WebApi8-CadastroTuristico\\Services\\Estado\\IEstadoInterface.cs",
+              "ToolTip": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico\\Services\\Estado\\IEstadoInterface.cs",
+              "RelativeToolTip": "WebApi8-CadastroTuristico\\Services\\Estado\\IEstadoInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T22:54:07.027Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi8-CadastroTuristico\\appsettings.json",
+              "ToolTip": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico\\appsettings.json",
+              "RelativeToolTip": "WebApi8-CadastroTuristico\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-02T21:00:07.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PontoTuristicoService.cs",
               "DocumentMoniker": "C:\\Projetos\\cadastroSinqia\\cadastro-turistico\\backend\\WebApi8-CadastroTuristico\\WebApi8-CadastroTuristico\\Services\\PontoTuristico\\PontoTuristicoService.cs",
               "RelativeDocumentMoniker": "WebApi8-CadastroTuristico\\Services\\PontoTuristico\\PontoTuristicoService.cs",
@@ -26,8 +59,7 @@
               "RelativeToolTip": "WebApi8-CadastroTuristico\\Services\\PontoTuristico\\PontoTuristicoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:41:39.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T14:41:39.096Z"
             }
           ]
         }
